@@ -1,0 +1,65 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+" Fancy statusline
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Navigate files in a sidebar
+Plug 'scrooloose/nerdtree'
+
+Plug 'rking/ag.vim'
+Plug '/home/linuxbrew/.linuxbrew/bin/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'dhruvasagar/vim-zoom'
+Plug 'othree/xml.vim'
+Plug 'vim-scripts/vim-auto-save'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+" Vim tree config "
+map <C-n> :NERDTreeToggle<CR>
+map <C-M> :NERDTreeFind<CR>
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+"" Basic
+set number              " show line numbers
+set wrap                " wrap lines
+set encoding=utf-8      " set encoding to UTF-8 (default was "latin1")
+set mouse=a             " enable mouse support (might not work well on Mac OS X)
+set wildmenu            " visual autocomplete for command menu
+
+" Copy to system clipboard with xsel
+noremap <leader>p :read !xsel --clipboard --output<cr>
+noremap <leader>c :w !xsel -ib<cr><cr>
+
+set statusline+=%{zoom#statusline()}
+
+" Fzf mappings
+nnoremap <leader>h :History<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>l :Lines<CR>
+
+" Custom mappings
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>cs :vsplit ~/development/devenv-dennisb/index.txt<cr>
+nnoremap <leader>r :so ~/.vimrc<CR> 
+nnoremap <Leader>w :update<CR>
+
+" Saving files
+set noswapfile
+let g:auto_save = 1  "Auto-save plugin: enable AutoSave on Vim startup
+let g:auto_save_in_insert_mode = 0  "Auto-save plugin do not save while in insert mode
+set autoread
+
+" No comments automatically
+set formatoptions-=cro
