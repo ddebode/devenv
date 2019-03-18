@@ -54,6 +54,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>cs :vsplit ~/development/devenv-dennisb/index.txt<cr>
 nnoremap <leader>r :so ~/.vimrc<CR> 
 nnoremap <Leader>w :update<CR>
+nnoremap <Leader>x :1,$!xmllint -format -<CR>
 
 " Saving files
 set noswapfile
@@ -63,3 +64,10 @@ set autoread
 
 " No comments automatically
 set formatoptions-=cro
+
+" Set clipboard to system clipboard
+" On ubuntu install package vim-gtk
+set clipboard=unnamedplus
+
+" Enable hl search
+set hlsearch
