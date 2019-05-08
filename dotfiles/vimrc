@@ -13,8 +13,6 @@ Plug 'vim-airline/vim-airline-themes'
 " Navigate files in a sidebar
 Plug 'scrooloose/nerdtree'
 
-Plug 'rking/ag.vim'
-Plug '/home/linuxbrew/.linuxbrew/bin/fzf'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'dhruvasagar/vim-zoom'
@@ -22,24 +20,36 @@ Plug 'othree/xml.vim'
 Plug 'vim-scripts/vim-auto-save'
 
 " List ends here. Plugins become visible to Vim after this call.
+" Use PlugInstall and PlugClean to install and remove plugins
 call plug#end()
 
 " Vim tree config "
 map <C-n> :NERDTreeToggle<CR>
-map <C-M> :NERDTreeFind<CR>
+map <C-b> :NERDTreeFind<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-"" Basic
+" Basic
 set number              " show line numbers
 set wrap                " wrap lines
 set encoding=utf-8      " set encoding to UTF-8 (default was "latin1")
 set mouse=a             " enable mouse support (might not work well on Mac OS X)
 set wildmenu            " visual autocomplete for command menu
+set relativenumber
+
+" Navigate
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " Copy to system clipboard with xsel
 noremap <leader>p :read !xsel --clipboard --output<cr>
 noremap <leader>c :w !xsel -ib<cr><cr>
+
+" Delete to zero register
+noremap <leader>d "_d<cr>
+noremap dd "_dd
 
 set statusline+=%{zoom#statusline()}
 
@@ -51,10 +61,17 @@ nnoremap <leader>l :Lines<CR>
 
 " Custom mappings
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>cs :vsplit ~/development/devenv-dennisb/index.txt<cr>
 nnoremap <leader>r :so ~/.vimrc<CR> 
-nnoremap <Leader>w :update<CR>
 nnoremap <Leader>x :1,$!xmllint -format -<CR>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>n :nohl<cr>
+
+" <leader><leader> toggles between buffers
+nnoremap <leader><leader> <c-^>
+
+" Find and replace
+vnoremap <Leader>sp "zy :%s/<C-R>z/<C-R>+/g
+nnoremap <Leader>sn :%s///g
 
 " Saving files
 set noswapfile
@@ -71,3 +88,33 @@ set clipboard=unnamedplus
 
 " Enable hl search
 set hlsearch
+
+" Search case insentive
+set ignorecase
+
+" Paste
+set pastetoggle=<F2>
+
+" record playback (start record with qq)
+noremap Q @q
+
+" Indent
+set shiftwidth=4
+set autoindent
+set smartindent
+
+" Augmenting Ag command using fzf#vim#with_preview function
+"   * fzf#vim#with_preview([[options], [preview window], [toggle keys...]])
+"     * For syntax-highlighting, Ruby and any of the following tools are required:
+"       - Bat: https://github.com/sharkdp/bat
+"       - Highlight: http://www.andre-simon.de/doku/highlight/en/highlight.php
+"       - CodeRay: http://coderay.rubychan.de/
+"       - Rouge: https://github.com/jneen/rouge
+"
+"   :Ag  - Start fzf with hidden preview window that can be enabled with "?" key
+"   :Ag! - Start fzf in fullscreen and display the preview window above
+command! -bang -nargs=* Ag
+  \ call fzf#vim#ag(<q-args>,
+  \                 <bang>0 ? fzf#vim#with_preview('up:60%')
+  \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \                 <bang>0)
