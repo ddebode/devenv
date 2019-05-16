@@ -18,6 +18,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'dhruvasagar/vim-zoom'
 Plug 'othree/xml.vim'
 Plug 'vim-scripts/vim-auto-save'
+Plug 'easymotion/vim-easymotion'
+Plug 'joshdick/onedark.vim'
+Plug 'terryma/vim-expand-region'
 
 " List ends here. Plugins become visible to Vim after this call.
 " Use PlugInstall and PlugClean to install and remove plugins
@@ -86,6 +89,9 @@ set formatoptions-=cro
 " On ubuntu install package vim-gtk
 set clipboard=unnamedplus
 
+" In visual mode paste action will not overwrite the default register
+xnoremap p pgvy
+
 " Enable hl search
 set hlsearch
 
@@ -102,6 +108,9 @@ noremap Q @q
 set shiftwidth=4
 set autoindent
 set smartindent
+
+" Easymotion
+nmap s <Plug>(easymotion-overwin-w)
 
 " Augmenting Ag command using fzf#vim#with_preview function
 "   * fzf#vim#with_preview([[options], [preview window], [toggle keys...]])
