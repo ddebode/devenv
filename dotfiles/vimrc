@@ -21,6 +21,7 @@ Plug 'vim-scripts/vim-auto-save'
 Plug 'easymotion/vim-easymotion'
 Plug 'joshdick/onedark.vim'
 Plug 'terryma/vim-expand-region'
+Plug 'brooth/far.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 " Use PlugInstall and PlugClean to install and remove plugins
@@ -32,7 +33,10 @@ map <C-b> :NERDTreeFind<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+let g:far#source = 'rg' 
+
 " Basic
+let mapleader = " "
 set number              " show line numbers
 set wrap                " wrap lines
 set encoding=utf-8      " set encoding to UTF-8 (default was "latin1")
@@ -68,13 +72,19 @@ nnoremap <leader>r :so ~/.vimrc<CR>
 nnoremap <Leader>x :1,$!xmllint -format -<CR>
 nnoremap <leader>q :q<cr>
 nnoremap <leader>n :nohl<cr>
+nnoremap <leader>/ :Ag<cr>
+nmap <leader>o o<Esc>
 
 " <leader><leader> toggles between buffers
 nnoremap <leader><leader> <c-^>
+"nnoremap <Tab> :bnext<CR>
+"nnoremap <S-Tab> :bprevious<CR>
+nnoremap <Tab> :bnext<CR>:redraw<CR>:ls<CR>
+nnoremap <S-Tab> :bprevious<CR>:redraw<CR>:ls<CR>
 
 " Find and replace
-vnoremap <Leader>sp "zy :%s/<C-R>z/<C-R>+/g
-nnoremap <Leader>sn :%s///g
+vnoremap <Leader>1 "zy :%s/<C-R>z//g
+nnoremap <Leader>2 :%s///g
 
 " Saving files
 set noswapfile
