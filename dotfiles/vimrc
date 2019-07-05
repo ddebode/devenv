@@ -19,9 +19,10 @@ Plug 'dhruvasagar/vim-zoom'
 Plug 'othree/xml.vim'
 Plug 'vim-scripts/vim-auto-save'
 Plug 'easymotion/vim-easymotion'
-Plug 'joshdick/onedark.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'brooth/far.vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 " List ends here. Plugins become visible to Vim after this call.
 " Use PlugInstall and PlugClean to install and remove plugins
@@ -43,6 +44,7 @@ set encoding=utf-8      " set encoding to UTF-8 (default was "latin1")
 set mouse=a             " enable mouse support (might not work well on Mac OS X)
 set wildmenu            " visual autocomplete for command menu
 set relativenumber
+set modelines=0 	" Set modelines of for security 
 
 " Navigate
 nnoremap <C-h> <C-w>h
@@ -86,6 +88,14 @@ nnoremap <S-Tab> :bprevious<CR>:redraw<CR>:ls<CR>
 vnoremap <Leader>1 "zy :%s/<C-R>z//g
 nnoremap <Leader>2 :%s///g
 
+" move line
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
 " Saving files
 set noswapfile
 let g:auto_save = 1  "Auto-save plugin: enable AutoSave on Vim startup
@@ -100,7 +110,7 @@ set formatoptions-=cro
 set clipboard=unnamedplus
 
 " In visual mode paste action will not overwrite the default register
-xnoremap p pgvy
+vnoremap p pgvy
 
 " Enable hl search
 set hlsearch
@@ -137,3 +147,12 @@ command! -bang -nargs=* Ag
   \                 <bang>0 ? fzf#vim#with_preview('up:60%')
   \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
   \                 <bang>0)
+
+" change cursor
+if exists('$TMUX')
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif

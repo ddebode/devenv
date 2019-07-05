@@ -29,3 +29,4 @@ nnoremap ,q <c-v>
 nmap s :action KJumpAction.Word0<cr>
 
 set showmode
+set surround
