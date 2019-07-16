@@ -5,7 +5,6 @@ highlight Constant guibg=grey90
 highlight Special gui=NONE guibg=grey90
 highlight StatusLine gui=bold guifg=white guibg=blue
 set guifont=DejaVu\ Sans\ Mono\ 12
-colorscheme onedark
 set guioptions=egmrt
 highlight SignColumn guibg=black guifg=black
 highlight GitGutterAdd guibg=black guifg=green
