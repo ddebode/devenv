@@ -6,6 +6,8 @@ highlight Special gui=NONE guibg=grey90
 highlight StatusLine gui=bold guifg=white guibg=blue
 set guifont=DejaVu\ Sans\ Mono\ 12
 set guioptions=egmrt
+syntax on
+colorscheme torte
 highlight SignColumn guibg=black guifg=black
 highlight GitGutterAdd guibg=black guifg=green
 highlight GitGutterChange guibg=black guifg=yellow
