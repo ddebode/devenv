@@ -45,6 +45,10 @@ set mouse=a             " enable mouse support (might not work well on Mac OS X)
 set wildmenu            " visual autocomplete for command menu
 set relativenumber
 set modelines=0 	" Set modelines of for security 
+colo desert
+
+" to see the cursor in the matching bracket more easily
+hi MatchParen cterm=bold ctermbg=green ctermfg=red
 
 " Navigate
 nnoremap <C-h> <C-w>h
@@ -114,6 +118,7 @@ vnoremap p pgvy
 
 " Enable hl search
 set hlsearch
+hi Search ctermfg=Black
 
 " Search case insentive
 set ignorecase
