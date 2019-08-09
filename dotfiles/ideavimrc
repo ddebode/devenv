@@ -26,7 +26,7 @@ vnoremap ,a :action GotoAction<CR>
 " Visual block remap
 nnoremap ,q <c-v>
 
-nmap s :action KJumpAction.Word0<cr>
+nmap ,f :action KJumpAction.Word0<cr>
 
 set showmode
 set surround
