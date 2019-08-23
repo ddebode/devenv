@@ -27,6 +27,11 @@ vnoremap ,a :action GotoAction<CR>
 nnoremap ,q <c-v>
 
 nmap ,f :action KJumpAction.Word0<cr>
+nmap s :action KJumpAction.Word0<cr>
 
 set showmode
 set surround
+set multiple-cursors
+set commentary
+
+set clipboard+=ideaputset clipboard+=ideaput

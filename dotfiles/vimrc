@@ -23,6 +23,7 @@ Plug 'terryma/vim-expand-region'
 Plug 'brooth/far.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
 
 " List ends here. Plugins become visible to Vim after this call.
 " Use PlugInstall and PlugClean to install and remove plugins
@@ -45,6 +46,7 @@ set mouse=a             " enable mouse support (might not work well on Mac OS X)
 set wildmenu            " visual autocomplete for command menu
 set relativenumber
 set modelines=0 	" Set modelines of for security 
+set autoread
 colo desert
 
 " to see the cursor in the matching bracket more easily
@@ -80,6 +82,8 @@ nnoremap <leader>q :q<cr>
 nnoremap <leader>n :nohl<cr>
 nnoremap <leader>/ :Ag<cr>
 nmap <leader>o o<Esc>
+nmap <leader>' vi'
+nmap <leader>; vi"
 
 " <leader><leader> toggles between buffers
 nnoremap <leader><leader> <c-^>
@@ -111,7 +115,7 @@ set formatoptions-=cro
 
 " Set clipboard to system clipboard
 " On ubuntu install package vim-gtk
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " In visual mode paste action will not overwrite the default register
 vnoremap p pgvy
