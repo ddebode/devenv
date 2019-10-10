@@ -24,6 +24,11 @@ Plug 'brooth/far.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
+" Support markdown tables
+let g:table_mode_corner='|'
 
 " List ends here. Plugins become visible to Vim after this call.
 " Use PlugInstall and PlugClean to install and remove plugins
@@ -133,6 +138,9 @@ set pastetoggle=<F2>
 
 " record playback (start record with qq)
 noremap Q @q
+
+" Allow backspace to delete more than what is inserted
+set backspace=indent,eol,start
 
 " Indent
 set shiftwidth=4
