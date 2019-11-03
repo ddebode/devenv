@@ -56,11 +56,11 @@ set autoread
 colo desert
 
 " to see the cursor in the matching bracket more easily
-hi MatchParen cterm=bold ctermbg=green ctermfg=red
+hi MatchParen cterm=underline,bold ctermbg=green ctermfg=none
 
 " Navigate
 nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
+nnoremap <C-j> <C-w>j 
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
