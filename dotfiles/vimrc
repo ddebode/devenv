@@ -27,6 +27,8 @@ Plug 'tpope/vim-commentary'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'frazrepo/vim-rainbow'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'xavierchow/vim-swagger-preview'
 
 " Support markdown tables
 let g:table_mode_corner='|'
@@ -77,12 +79,6 @@ noremap <leader>d "_d<cr>
 noremap dd "_dd
 
 set statusline+=%{zoom#statusline()}
-
-" Fzf mappings
-nnoremap <leader>h :History<CR>
-nnoremap <leader>b :Buffers<CR>
-nnoremap <leader>f :Files<CR>
-nnoremap <leader>l :Lines<CR>
 
 " Custom mappings
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -178,3 +174,9 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
+
+" Fzf mappings
+nnoremap <leader>h :History<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>l :Lines<CR>
