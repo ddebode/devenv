@@ -1,0 +1,171 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/ddebode/
+	..
+1585682596
+'b
+	/home/ddebode/bin/
+	..
+1585682596
+'h
+	/home/ddebode/
+	..
+1585682596
+
+# Bookmarks:
+
+# TUI:
+al
+q1
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/ddebode/.config/vifm
+	vifminfo
+3
+d/home/ddebode/development/devenv-dennisb
+	documentation
+2
+d/home/ddebode/development/devenv-dennisb/documentation
+	..
+0
+d/home/ddebode/development/devenv-dennisb
+	dotfiles
+3
+d/home/ddebode/development/devenv-dennisb/dotfiles
+	..
+0
+d/home/ddebode/development/devenv-dennisb
+	..
+0
+d/home/ddebode/development
+	..
+0
+d/home/ddebode
+	development
+11
+d/home/ddebode/development
+	devenv-dennisb
+2
+d/home/ddebode/development/devenv-dennisb
+	documentation
+2
+d/home/ddebode/development/devenv-dennisb/documentation
+	..
+0
+d/home/ddebode/development/devenv-dennisb
+	dotfiles
+3
+d/home/ddebode/development/devenv-dennisb/dotfiles
+	gvimrc
+1
+d/home/ddebode/development/devenv-dennisb
+	dotfiles
+3
+d/home/ddebode/development
+	devenv-dennisb
+2
+d/home/ddebode/development/devenv-dennisb
+	dotfiles
+3
+d/home/ddebode/development/devenv-dennisb/dotfiles
+	..
+0
+d/home/ddebode/development/backup
+	..
+0
+d/home/ddebode/development
+	backup
+1
+d/home/ddebode
+	development
+11
+d/home/ddebode/development
+	devenv-dennisb
+2
+d/home/ddebode/development/devenv-dennisb
+	install-apt.sh
+6
+d/home/ddebode
+	.kube
+13
+d/home/ddebode/.kube
+	..
+0
+d/home/ddebode
+	..
+0
+d/home/ddebode/.config/vifm
+	scripts
+2
+d
+
+# Right window history (oldest to newest):
+D/home/ddebode/development/devenv-dennisb
+	..
+0
+D/home/ddebode/development
+	devenv-dennisb
+2
+D/home/ddebode/development/devenv-dennisb
+	..
+0
+D/home/ddebode/development
+	devenv-dennisb
+2
+D/home/ddebode/development/devenv-dennisb
+	README.md
+5
+D/home/ddebode/development
+	devenv-dennisb
+2
+D/home/ddebode
+	development
+11
+D/home/ddebode/development
+	devenv-dennisb
+2
+D/home/ddebode/development/devenv-dennisb
+	README.md
+5
+D
+
+# Command line history (oldest to newest):
+:ls
+:view
+:!ls -ltr
+:!ls
+:!ls %c
+:cd /home/ddebode/development/backup/
+:q
+:cd .config/vifm/
+
+# Search history (oldest to newest):
+/.kube
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].1
+]F
+s0
