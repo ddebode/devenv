@@ -464,4 +464,9 @@ nnoremap <f8> :delete<cr>
 " ------------- Custom -----------------
 fileview */ tree %c
 
+" Toggle visibility of preview window
+nnoremap w :view<cr>
+vnoremap w :view<cr>gv
+
+nnoremap b :bmarks<cr>
 nnoremap <space>q :q<cr>

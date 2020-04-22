@@ -6,19 +6,25 @@
 	..
 1585682596
 'b
-	/home/ddebode/bin/
+	/Users/ddebode/bin/
 	..
-1585682596
+1587483709
 'h
-	/home/ddebode/
+	/Users/ddebode/
 	..
-1585682596
+1587395896
 
 # Bookmarks:
+b/Volumes/RDS-Transfer/ddebode/
+	transfer
+	1587545537
+b/Users/ddebode/Development/hedwig/
+	hedwig
+	1587545698
 
 # TUI:
-al
-q1
+ar
+q0
 v2
 ov
 m-1
@@ -26,45 +32,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ddebode/.config/vifm
-	vifminfo
-3
-d/home/ddebode/development/devenv-dennisb
-	documentation
-2
-d/home/ddebode/development/devenv-dennisb/documentation
-	..
-0
-d/home/ddebode/development/devenv-dennisb
-	dotfiles
-3
-d/home/ddebode/development/devenv-dennisb/dotfiles
-	..
-0
-d/home/ddebode/development/devenv-dennisb
-	..
-0
-d/home/ddebode/development
-	..
-0
-d/home/ddebode
-	development
-11
-d/home/ddebode/development
-	devenv-dennisb
-2
-d/home/ddebode/development/devenv-dennisb
-	documentation
-2
-d/home/ddebode/development/devenv-dennisb/documentation
-	..
-0
-d/home/ddebode/development/devenv-dennisb
-	dotfiles
-3
-d/home/ddebode/development/devenv-dennisb/dotfiles
-	gvimrc
-1
 d/home/ddebode/development/devenv-dennisb
 	dotfiles
 3
@@ -104,9 +71,288 @@ d/home/ddebode
 d/home/ddebode/.config/vifm
 	scripts
 2
+d/home
+	..
+0
+d/
+	home
+13
+d/home
+	..
+0
+d/
+	home
+13
+d/home
+	..
+0
+d/
+	home
+13
+d/home
+	..
+0
+d/
+	home
+13
+d/home
+	..
+0
+d/
+	home
+13
+d/home
+	..
+0
+d/
+	Users
+7
+d/Users
+	ddebode
+3
+d/Users/ddebode
+	..
+0
+d/Users/ddebode/Development/devenv
+	..
+0
+d/Users/ddebode/Development/hedwig
+	..
+0
+d/Users/ddebode/Development
+	hedwig
+6
+d/Users/ddebode
+	.tmux.conf
+37
+d/Users/ddebode/Development/hedwig
+	..
+0
+d/Users/ddebode/Development
+	hedwig
+6
+d/Users/ddebode
+	Documents
+5
+d/Users/ddebode/Documents
+	giphy.gif
+24
+d/Users/ddebode
+	Pictures
+10
+d/Users/ddebode/Pictures
+	Photos Library.photoslibrary
+1
+d/Users/ddebode/Pictures/Photos Library.photoslibrary
+	Masters
+2
+d/Users/ddebode/Pictures/Photos Library.photoslibrary/Masters
+	2019
+1
+d/Users/ddebode/Pictures/Photos Library.photoslibrary/Masters/2019
+	10
+1
+d/Users/ddebode/Pictures/Photos Library.photoslibrary/Masters/2019/10
+	16
+1
+d/Users/ddebode/Pictures/Photos Library.photoslibrary/Masters/2019/10/16
+	20191016-151448
+1
+d/Users/ddebode/Pictures/Photos Library.photoslibrary/Masters/2019/10/16/20191016-151448
+	..
+0
+d/Users/ddebode/Pictures/Photos Library.photoslibrary/Masters/2019/10/16
+	20191016-151448
+1
+d/Users/ddebode/Pictures/Photos Library.photoslibrary/Masters/2019/10
+	16
+1
+d/Users/ddebode/Pictures/Photos Library.photoslibrary/Masters/2019
+	10
+1
+d/Users/ddebode/Pictures/Photos Library.photoslibrary/Masters
+	2019
+1
+d/Users/ddebode/Pictures/Photos Library.photoslibrary
+	Masters
+2
+d/Users/ddebode/Pictures
+	Photos Library.photoslibrary
+1
+d/Users/ddebode
+	Documents
+5
+d/Users/ddebode/Documents
+	giphy.gif
+24
+d/Users/ddebode/Development/hedwig
+	airflow
+1
+d/Users/ddebode/Development/hedwig/airflow
+	bigquery-style-guide.md
+13
+d/Users/ddebode/Development/hedwig
+	airflow
+1
+d/Users/ddebode/Development
+	hedwig
+6
+d/Users/ddebode
+	Development
+4
+d/Users/ddebode/Development
+	hedwig
+6
+d/Users/ddebode/Development/hedwig
+	airflow
+1
+d/Users/ddebode/Development/hedwig/airflow
+	archive
+3
+d/Users/ddebode/Development/hedwig
+	airflow
+1
+d/Users/ddebode/Development/hedwig/airflow
+	archive
+1
+d/Users/ddebode/Development/hedwig
+	espconnect-service
+4
+d/Users/ddebode/Development/hedwig/espconnect-service
+	..
+0
+d/Users/ddebode
+	Downloads
+6
+d/Users/ddebode/Downloads
+	frans.jpg
+37
+d/Users/ddebode/Development/devenv
+	..
+0
+d/Users/ddebode/Development/devenv/dotfiles
+	..
+0
+d/Users/ddebode/Development/devenv
+	install-apt.sh
+6
+d/Users/ddebode/Development/devenv/dotfiles
+	..
+0
+d/Users/ddebode/temp
+	..
+0
+d/Users/ddebode
+	.vimrc
+37
+d/Users/ddebode/temp
+	..
+0
+d/Users/ddebode
+	Development
+4
+d/Users/ddebode/Development
+	hedwig
+5
+d/Users/ddebode/Development/hedwig
+	r2d2
+5
+d/Users/ddebode/Development/hedwig/r2d2
+	README.md
+1
+d/Users/ddebode/Development/hedwig
+	airflow
+1
+d/Users/ddebode/Development/hedwig/airflow
+	archive
+1
+d/Users/ddebode/Development/hedwig/airflow/archive
+	..
+0
+d/Users/ddebode/Development/hedwig/airflow
+	archive
+1
+d/Users/ddebode/Development/hedwig/airflow/archive
+	examples_dags
+1
+d/Users/ddebode/Development/hedwig/airflow/archive/examples_dags
+	..
+0
+d/Users/ddebode/Development/hedwig/airflow/archive
+	examples_dags
+1
+d/Users/ddebode/Development/hedwig/airflow
+	archive
+1
+d/Users/ddebode/Development/hedwig
+	airflow
+1
+d/Users/ddebode/Development
+	hedwig
+5
+d/Users/ddebode
+	Development
+4
+d/Users
+	ddebode
+2
+d/
+	Volumes
+5
+d/Users/ddebode
+	Development
+4
+d/Users/ddebode/Development
+	hedwig
+5
+d/Users/ddebode
+	temp
+15
+d/Users/ddebode/temp
+	metadataconfig
+6
+d/Users/ddebode/temp/metadataconfig
+	response_1576766811560.json
+1
+d/Users/ddebode/temp
+	sur
+12
+d/Users/ddebode/temp/sur
+	content4
+4
+d/Users/ddebode/temp
+	sur
+12
+d/Users/ddebode/temp/sur
+	content2
+3
+d/Volumes/RDS-Transfer/ddebode
+	2.From-RDS
+2
+d/Volumes/RDS-Transfer/ddebode/2.From-RDS
+	nps_rr_20200422.sql
+19
 d
 
 # Right window history (oldest to newest):
+D/Users/ddebode/Development/hedwig/dataflow
+	..
+0
+D/Users/ddebode/temp
+	sasquatch
+10
+D/Users/ddebode/temp/sasquatch
+	..
+0
+D/Users/ddebode/temp
+	sasquatch
+10
+D/Users/ddebode/temp/sur
+	..
+0
+D/Users/ddebode/temp
+	scripts
+11
 D/home/ddebode/development/devenv-dennisb
 	..
 0
@@ -134,35 +380,152 @@ D/home/ddebode/development
 D/home/ddebode/development/devenv-dennisb
 	README.md
 5
+D/home
+	..
+0
+D/
+	home
+10
+D/home
+	..
+0
+D/
+	home
+10
+D/home
+	..
+0
+D/
+	home
+10
+D/home
+	..
+0
+D/
+	Users
+4
+D/Users
+	..
+0
+D/
+	Users
+4
+D/Users
+	ddebode
+2
+D/Users/ddebode
+	Development
+4
+D/Users/ddebode/Development
+	hedwig
+5
+D/Users/ddebode/Development/hedwig
+	..
+0
+D/Users/ddebode/Development
+	temp
+11
+D/Users/ddebode/Development/temp
+	vifm
+20
+D/Users/ddebode/Development/temp/vifm
+	..
+0
+D/Volumes/RDS-Transfer/ddebode
+	2.From-RDS
+2
+D/Volumes/RDS-Transfer
+	csteunebrink
+11
+D/Users/ddebode/Development/hedwig
+	airflow
+1
+D/Users/ddebode/Development/hedwig/airflow
+	athena
+2
+D/Users/ddebode/Development/hedwig/airflow/athena
+	sql
+7
+D/Users/ddebode/Development/hedwig/airflow/athena/sql
+	nps_survey
+2
+D/Users/ddebode/Development/hedwig/airflow/athena/sql/nps_survey
+	nps_log.sql
+1
+D/Users/ddebode/Development/hedwig/airflow/athena/sql
+	nps_survey
+2
+D/Users/ddebode/Development/hedwig/airflow/athena/sql/nps_survey
+	nps_rr_export.sql
+3
+D/Users/ddebode/Development/hedwig/airflow/athena/sql
+	nps_survey
+2
+D/Users/ddebode/Development/hedwig/airflow/athena/sql/nps_survey
+	nps_rr_20200422.sql
+2
 D
 
 # Command line history (oldest to newest):
+:bmark test
+:bookmarks
+:delbm
+:bmarks
 :ls
-:view
 :!ls -ltr
 :!ls
 :!ls %c
 :cd /home/ddebode/development/backup/
 :q
 :cd .config/vifm/
+:cd /Development
+:!cd Development
+:cd ~
+:h
+:copy
+:view
+:mkdir vifm
+:move
+:shell
+:cd Volumes
+:cd /Volumes/RDS-Transfer/ddebode
+:bookmark transfer
+:bmark transfer
+:cd ~/Development/hedwig/
+:bmark hedwig
 
 # Search history (oldest to newest):
+/vifm
 /.kube
+/tmux
+/vimrc
 
 # Prompt history (oldest to newest):
+pcontentt2
+pcontent2
+pcontent4
 
 # Local filter history (oldest to newest):
 
 # Registers:
+""/Users/ddebode/.local/share/vifm/Trash/000_nps_rr_2020422.sql
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/Users/ddebode/.local/share/vifm/Trash/000_content2
+	/Users/ddebode/Development/temp/vifm/content2
+t/Users/ddebode/.local/share/vifm/Trash/000_content4
+	/Users/ddebode/Development/temp/vifm/content4
+t/Users/ddebode/.local/share/vifm/Trash/000_nps_rr_20200420.sql
+	/Users/ddebode/Development/hedwig/airflow/athena/sql/nps_survey/nps_rr_20200420.sql
+t/Users/ddebode/.local/share/vifm/Trash/000_nps_rr_2020422.sql
+	/Users/ddebode/Development/hedwig/airflow/athena/sql/nps_survey/nps_rr_2020422.sql
 
 # State:
 f
 i1
-[.0
+[.1
 [F
 F
 I1
