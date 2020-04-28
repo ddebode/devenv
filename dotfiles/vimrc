@@ -91,6 +91,7 @@ nnoremap <leader>/ :Ag<cr>
 nmap <leader>o o<Esc>
 nmap <leader>' vi'
 nmap <leader>; vi"
+map <leader>a <esc>ggVG<CR>
 
 " <leader><leader> toggles between buffers
 nnoremap <leader><leader> <c-^>
