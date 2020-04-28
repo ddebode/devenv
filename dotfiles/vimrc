@@ -122,7 +122,7 @@ set formatoptions-=cro
 
 " Set clipboard to system clipboard
 " On ubuntu install package vim-gtk
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " In visual mode paste action will not overwrite the default register
 vnoremap p pgvy
