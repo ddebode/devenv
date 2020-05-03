@@ -484,3 +484,5 @@ vnoremap w :view<cr>gv
 
 nnoremap b :bmarks<cr>
 nnoremap <space>q :q<cr>
+
+nnoremap x :!chmod +x %c
