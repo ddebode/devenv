@@ -1,10 +1,11 @@
 #!/bin/bash
 
-giturl=$(git config --get remote.origin.url)
+url=$(git config --get remote.origin.url)
 
-if [[ "$giturl" == *"https://"* ]]; then
-  open "$giturl"
-else
-    updated_url=`echo "$giturl" | sed -e 's/:/\//g'  -e 's/git@/https:\/\//g' -e 's/\.git//g'`
-    open $updated_url
-fi
+# transform origin url to https url
+[[ "$url" == *"git@"* ]] && url=`echo "$url" | sed -e 's/:/\//g'  -e 's/git@/https:\/\//g' -e 's/\.git//g'`
+
+# on macos use open
+[[ "$OSTYPE" == "darwin"* ]] && open $url
+# otherwise use xdg-open
+xdg-open $url
