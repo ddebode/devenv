@@ -30,6 +30,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'xavierchow/vim-swagger-preview'
 Plug 'junegunn/vim-easy-align'
+Plug 'dense-analysis/ale', { 'on':  'ALEToggle' }
 
 " Support markdown tables
 let g:table_mode_corner='|'
@@ -182,6 +183,13 @@ nnoremap <leader>h :History<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>l :Lines<CR>
+
+" ALE mappings
+nmap [t :ALEToggle<CR>
+nmap ]a :ALENextWrap<CR>
+nmap [a :ALEPreviousWrap<CR>
+nmap ]A :ALELast
+nmap [A :ALEFirst
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
