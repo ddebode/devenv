@@ -18,11 +18,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'dhruvasagar/vim-zoom'
 Plug 'othree/xml.vim'
 Plug 'vim-scripts/vim-auto-save'
-Plug 'easymotion/vim-easymotion'
 Plug 'terryma/vim-expand-region'
 Plug 'brooth/far.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'frazrepo/vim-rainbow'
@@ -154,9 +155,6 @@ set backspace=indent,eol,start
 set shiftwidth=4
 set autoindent
 set smartindent
-
-" Easymotion
-nmap s <Plug>(easymotion-overwin-w)
 
 " Augmenting Ag command using fzf#vim#with_preview function
 "   * fzf#vim#with_preview([[options], [preview window], [toggle keys...]])
