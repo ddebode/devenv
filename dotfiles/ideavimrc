@@ -23,6 +23,8 @@ nnoremap <C-CR> :action ShowIntentionActions<CR>
 nnoremap ,a :action GotoAction<CR>
 vnoremap ,a :action GotoAction<CR>
 
+map ,d :action Debug<CR>
+
 " Visual block remap
 nnoremap ,q <c-v>
 
@@ -31,7 +33,8 @@ nmap s :action KJumpAction.Word0<cr>
 
 set showmode
 set surround
-set multiple-cursors
 set commentary
+set ReplaceWithRegister
+set highlightedyank
 
 set clipboard+=ideaputset clipboard+=ideaput
