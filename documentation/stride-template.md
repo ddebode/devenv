@@ -86,7 +86,7 @@ Denial of Service?
 * Is it important that operation can be performed at any time?
 * What is the accepted down-time for OPERATION?
 
-Escalation of priveleges:
+Escalation of privileges:
 
 * On what data is a user allowed to perform OPERATION?
 * What privileges are required to perform OPERATION?
