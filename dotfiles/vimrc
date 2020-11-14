@@ -138,10 +138,6 @@ endif
 " In visual mode paste action will not overwrite the default register
 vnoremap p pgvy
 
-" Enable hl search
-set hlsearch
-hi Search ctermfg=Black
-
 " Search case insentive
 set ignorecase
 
@@ -212,3 +208,8 @@ nmap ga <Plug>(EasyAlign)
 let g:highlightedyank_highlight_duration = 300
 
 syntax on
+
+" Enable hl search
+set hlsearch
+hi Search term=standout ctermfg=0 ctermbg=3 guifg=Black guibg=Yellow
+
