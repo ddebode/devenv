@@ -209,8 +209,15 @@ nmap ga <Plug>(EasyAlign)
 " highlight yank plugin
 let g:highlightedyank_highlight_duration = 300
 
-syntax on
+" Save session on exit
+fu! SaveSess()
+    execute 'mksession! ~/.vim/session.vim'
+endfunction
 
+autocmd VimLeave * call SaveSess()
+" end 
+
+syntax on
 " Enable hl search
 set hlsearch
 hi Search term=standout ctermfg=0 ctermbg=3 guifg=Black guibg=Yellow
