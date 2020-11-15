@@ -83,6 +83,8 @@ noremap <leader>c :w !xsel -ib<cr><cr>
 " Delete to zero register
 noremap <leader>d "_d<cr>
 noremap dd "_dd
+noremap c "_c
+noremap x "_x
 
 set statusline+=%{zoom#statusline()}
 
