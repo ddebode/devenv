@@ -9,8 +9,11 @@ while read line; do
     output+="$line"$'\n';
 done 
 
+GREEN=$(tput setaf 2)
+RESET=$(tput sgr0)
+
 echo "";
-echo -e "\e[32m--- FINISHED---  \033[0m";
+echo ${GREEN}"--- FINISHED---"${RESET};
 echo "";
 
 echo "$output" | rg -A 10 "(FAILURE!|COMPILATION ERROR|\[ERROR\] Failures:)";
