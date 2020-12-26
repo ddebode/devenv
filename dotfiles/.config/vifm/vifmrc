@@ -478,3 +478,8 @@ nnoremap b :bmarks<cr>
 nnoremap <space>q :q<cr>
 
 nnoremap x :!chmod +x %c
+
+" Zip files  :zip archive-name
+command! zip if [ -n "%a" ]; then
+           \     zip -r '%a.zip' %f;
+           \ fi
