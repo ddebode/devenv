@@ -113,8 +113,8 @@ nnoremap <leader>q :q<cr>
 nnoremap <leader>n :nohl<cr>
 nnoremap <leader>/ :Ag<cr>
 nmap <leader>o o<Esc>
-nmap <leader>' vi'
-nmap <leader>; vi"
+nmap <leader>' vi"
+nmap v" vi"
 map <leader>a <esc>ggVG<CR>
 
 " <leader><leader> toggles between buffers
