@@ -19,7 +19,8 @@
     {
       "name": "tinytacoteam/zazu-clipboard",
       "variables": {
-        "ClipboardKey": "cmd+shift+v"
+        "ClipboardKey": "cmd+shift+v",
+        "size": 5
       }
     }
   ]
