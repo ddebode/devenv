@@ -295,6 +295,34 @@ nnoremap <silent><nowait> <space>cp  :<C-u>CocListResume<CR>
 "
 " end coc settings
 "
+
+" Custom functions
+" Function to easily move maven depedency version to the property section
+function ReplaceMavenVersion()
+   " copy artifactId and put version in register m"
+   exe "norm! yitj\"mcit$\{\}"
+   " Paste and type version"
+   exe "norm! Pa\.version"
+   " Copy property key to k"
+   exe "norm! h\"kyi}"
+endfunction
+
+function AddMavenVersion()
+    " Add new line"
+   exe "norm! o<>"
+   " paste property key from register m"
+   exe "norm! \"kP"
+   " paste version"
+   exe "norm! l\"mp"
+   " add closing tag"
+   exe "norm! a</>"
+   " paste property key from register m"
+   exe "norm! \"kP"
+endfunction
+    
+nnoremap <leader>rmv :call ReplaceMavenVersion()<CR>
+nnoremap <leader>amv :call AddMavenVersion()<CR>
+
 syntax on
 " Enable hl search
 set hlsearch
