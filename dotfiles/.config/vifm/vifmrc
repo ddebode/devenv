@@ -135,6 +135,7 @@ mark h ~/
 command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
 command! zip zip -r %f.zip %f
+command! unzip unzip %f
 command! run !! ./%f
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
@@ -244,6 +245,26 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
 " fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
 "          \ convert -identify %f -verbose /dev/null
 
+    fileviewer *.pdf
+        \ vifmimg pdfpreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+    fileviewer *.epub
+        \ vifmimg epubpreview %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
+
+"    fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
+"        \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
+"        \ vifmimg videopreview %px %py %pw %ph %c
+"        \ %pc
+"        \ vifmimg clear
+
+    fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm
+        \ vifmimg draw %px %py %pw %ph %c
+        \ %pc
+        \ vifmimg clear
 
 " OpenRaster
 filextype *.ora
@@ -431,9 +452,6 @@ nnoremap I cw<c-a>
 nnoremap cc cw<c-u>
 nnoremap A cw
 
-" Open console in current directory
-nnoremap ,t :!xterm &<cr>
-
 " Open editor to edit vifmrc and apply settings after returning to vifm
 nnoremap ,c :write | edit $MYVIFMRC | restart<cr>
 " Open gvim to edit vifmrc
@@ -476,6 +494,9 @@ vnoremap w :view<cr>gv
 
 nnoremap b :bmarks<cr>
 nnoremap <space>q :q<cr>
+
+" Open nautilus in current dir
+nnoremap <space>n :!nautilus %d&<cr>
 
 nnoremap x :!chmod +x %c
 
