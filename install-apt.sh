@@ -10,9 +10,13 @@ sudo add-apt-repository ppa:mmstick76/alacritty
 sudo apt install alacritty  
 sudo apt install wmctrl
 sudo apt install virtualbox
+sudo apt install vifm
 sudo apt install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sudo apt-get install zsh-antigen
+sudo apt install tmux
+sudo apt install curl
+sudo apt install nodejs
+sudo apt-get install npm --no-install-recommends
 
 # ZSH_THEME="bira"
 
