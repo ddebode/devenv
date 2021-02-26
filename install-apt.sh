@@ -20,6 +20,30 @@ sudo apt-get install npm --no-install-recommends
 
 # ZSH_THEME="bira"
 
+# source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
+
+# # Load the oh-my-zsh's library.
+# antigen use oh-my-zsh
+
+# # Bundles from the default repo (robbyrussell's oh-my-zsh).
+# antigen bundle command-not-found
+
+# # Load bundles from external repos.
+# antigen bundle zsh-users/zsh-completions
+# antigen bundle zsh-users/zsh-autosuggestions
+# antigen bundle zsh-users/zsh-syntax-highlighting
+
+# # Load the theme.
+# # antigen theme bira
+# # antigen theme romkatv/powerlevel10k
+
+# # Workaround to reload config without issues: https://github.com/zsh-users/antigen/issues/675
+# THEME=romkatv/powerlevel10k 
+# antigen list | grep $THEME; if [ $? -ne 0 ]; then antigen theme $THEME; fi
+
+# # Tell Antigen that you're done.
+# antigen apply
+
 # plugins=(git zsh-autosuggestions kubectl)
 # # Lf
 # lfcd () {
