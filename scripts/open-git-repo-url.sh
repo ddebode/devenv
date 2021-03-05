@@ -6,6 +6,6 @@ url=$(git config --get remote.origin.url)
 [[ "$url" == *"git@"* ]] && url=`echo "$url" | sed -e 's/:/\//g'  -e 's/git@/https:\/\//g' -e 's/\.git//g'`
 
 # on macos use open
-[[ "$OSTYPE" == "darwin"* ]] && open $url
+[[ "$OSTYPE" == "darwin"* ]] && open $url$1
 # otherwise use xdg-open
-xdg-open $url
+xdg-open $url$1
