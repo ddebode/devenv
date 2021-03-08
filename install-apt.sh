@@ -17,6 +17,7 @@ sudo apt install tmux
 sudo apt install curl
 sudo apt install nodejs
 sudo apt-get install npm --no-install-recommends
+sudo apt install fd-find
 
 # ZSH_THEME="bira"
 
