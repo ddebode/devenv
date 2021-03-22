@@ -37,5 +37,6 @@ set surround
 set commentary
 set ReplaceWithRegister
 set highlightedyank
+set NERDTree
 
 set clipboard+=ideaputset clipboard+=ideaput
