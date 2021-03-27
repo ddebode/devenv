@@ -8,13 +8,21 @@ brew install tmux # tmux attach -t base || tmux new -s base
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 brew install node
 brew install antigen
-brew install neovim
 brew install tldr
 brew install lazygit
 brew install the_silver_searcher
 brew install lsd
 brew install fd
 brew install rm-improved
+
+# neovim
+# brew install neovim
+# neovim head
+brew install cmake
+brew install luarocks
+brew install pkg-config
+pip3 install --user neovim
+brew install --HEAD neovim
 
 # Java
 brew tap adoptopenjdk/openjdk
@@ -30,4 +38,4 @@ brew install --cask jetbrains-toolbox
 # create shell script in: /usr/local/bin/idea
 ##!/bin/sh
 
-#open -na "/Users/ddebode/Applications/JetBrains Toolbox/IntelliJ IDEA Community Edition.app" --args "$@"
+#open -na "/Users/<username>/Applications/JetBrains Toolbox/IntelliJ IDEA Community Edition.app" --args "$@"
