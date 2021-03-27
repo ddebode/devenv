@@ -25,4 +25,7 @@ brew install maven
 # alias j12="export JAVA_HOME=`/usr/libexec/java_home -v 12`"
 # alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`"
 brew install --cask jetbrains-toolbox
+# create shell script in: /usr/local/bin/idea
+##!/bin/sh
 
+#open -na "/Users/ddebode/Applications/JetBrains Toolbox/IntelliJ IDEA Community Edition.app" --args "$@"
