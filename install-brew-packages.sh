@@ -19,10 +19,12 @@ brew install rm-improved
 # Java
 brew tap adoptopenjdk/openjdk
 brew install --cask adoptopenjdk8
+brew install --cask adoptopenjdk11
 brew install --cask adoptopenjdk12
 brew install maven
 # Add to zshrc
 # alias j12="export JAVA_HOME=`/usr/libexec/java_home -v 12`"
+# alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`"
 # alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`"
 brew install --cask jetbrains-toolbox
 # create shell script in: /usr/local/bin/idea
