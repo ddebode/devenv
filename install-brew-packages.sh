@@ -14,6 +14,7 @@ brew install the_silver_searcher
 brew install lsd
 brew install fd
 brew install rm-improved
+brew install ripgrep
 
 # neovim
 # brew install neovim
