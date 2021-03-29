@@ -15,6 +15,7 @@ brew install lsd
 brew install fd
 brew install rm-improved
 brew install ripgrep
+brew install gawk
 
 # neovim
 # brew install neovim
@@ -40,3 +41,12 @@ brew install --cask jetbrains-toolbox
 ##!/bin/sh
 
 #open -na "/Users/<username>/Applications/JetBrains Toolbox/IntelliJ IDEA Community Edition.app" --args "$@"
+
+# Cloud
+brew install --cask google-cloud-sdk
+# Add to zshrc
+# source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+# source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+brew install kubernetes-cli
+brew install kubectx
+
