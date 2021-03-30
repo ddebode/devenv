@@ -16,6 +16,7 @@ brew install fd
 brew install rm-improved
 brew install ripgrep
 brew install gawk
+brew install jq
 
 # neovim
 # brew install neovim
