@@ -14,26 +14,22 @@ nnoremap U :action FindUsages<CR>
 nnoremap R :action RenameElement<CR>
 
 nnoremap == :action ReformatCode<CR>
-vnoremap == :action ReformatCode<CR>
-
 nnoremap cc :action CommentByLineComment<CR>
-vnoremap cc :action CommentByLineComment<CR>
-
 nnoremap <C-CR> :action ShowIntentionActions<CR>
-
-nnoremap ,a :action GotoAction<CR>
-vnoremap ,a :action GotoAction<CR>
-
+nnoremap ,a :action $SelectAll<CR>
 map ,d :action Debug<CR>
 
 " Visual block remap
 nnoremap ,q <c-v>
 
-nmap ,f :action KJumpAction.Word0<cr>
 nmap s :action KJumpAction.Word0<cr>
+nmap l :action KJumpAction.Line<cr>
 
 set showmode
+
+" Plugins
 set surround
+set multiple-cursors
 set commentary
 set ReplaceWithRegister
 set highlightedyank
