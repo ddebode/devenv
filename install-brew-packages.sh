@@ -17,6 +17,7 @@ brew install rm-improved
 brew install ripgrep
 brew install gawk
 brew install jq
+brew install bash # some tmux plugins won't work without this
 
 # neovim
 # brew install neovim
