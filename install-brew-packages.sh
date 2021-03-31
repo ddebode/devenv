@@ -50,4 +50,5 @@ brew install --cask google-cloud-sdk
 # source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 brew install kubernetes-cli
 brew install kubectx
+brew install k9s
 
