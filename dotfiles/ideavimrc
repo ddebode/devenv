@@ -13,6 +13,7 @@ nnoremap ,g :action FindInPath<CR>
 nnoremap ,s :action FileStructurePopup<CR>
 nmap ,d :action Debug<CR>
 noremap ,a :action $SelectAll<CR>
+noremap ,w :action Switcher<CR>
 
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gs :action GotoSuperMethod<CR>
@@ -31,7 +32,7 @@ nnoremap <C-CR> :action ShowIntentionActions<CR>
 nnoremap ,q <c-v>
 
 nnoremap s :action KJumpAction.Word0<cr>
-nnoremap l :action KJumpAction.Line<cr>
+nnoremap ,l :action KJumpAction.Line<cr>
 
 set showmode "shows in which mode we are
 set clipboard+=ideaputset clipboard+=ideaput
