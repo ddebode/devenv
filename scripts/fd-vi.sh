@@ -1,3 +1,3 @@
 
 #!/bin/bash
-vi $(fd $1 | fzf)
+nvim $(fd $1 | fzf)
