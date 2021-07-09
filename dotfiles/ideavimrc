@@ -6,6 +6,7 @@ set commentary          " gcc in visual mode to comment out line
 set ReplaceWithRegister " gr<motion>, grr to replace: first second third
 set highlightedyank
 set NERDTree
+set textobj-indent
 
 " Bind intellij actions (:actionlist)
 nnoremap ,e :action SearchEverywhere<CR>
