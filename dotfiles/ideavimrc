@@ -7,9 +7,11 @@ set ReplaceWithRegister " gr<motion>, grr to replace: first second third
 set highlightedyank
 set NERDTree
 set textobj-indent
+set exchange            " cx to swap regions of text
 
 " Bind intellij actions (:actionlist)
-nnoremap ,e :action SearchEverywhere<CR>
+nnoremap ,r :action SearchEverywhere<CR>
+nnoremap ,e :action RecentFiles<CR>
 nnoremap ,g :action FindInPath<CR>
 nnoremap ,s :action FileStructurePopup<CR>
 nmap ,d :action Debug<CR>
