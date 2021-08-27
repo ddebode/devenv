@@ -18,6 +18,7 @@ nmap ,d :action Debug<CR>
 noremap ,a :action $SelectAll<CR>
 noremap ,w :action Switcher<CR>
 noremap ,b :action ShowBookmarks<CR>
+noremap ,m :action RefactoringMenu<CR>
 
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gs :action GotoSuperMethod<CR>
