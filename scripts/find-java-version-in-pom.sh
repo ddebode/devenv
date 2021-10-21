@@ -1,5 +1,5 @@
 #!/bin/bash
-# This scripts checks the java version in the pom file in the same folder and then switches to correct java version
+# This scripts checks the java version defined in the pom file in the current folder and then switches to correct java version
 # scripts needs ripgrep
 # Put this in your zshrc or bashrc
 # # Ls after every cd and check java version
