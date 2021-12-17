@@ -25,6 +25,8 @@ nnoremap gs :action GotoSuperMethod<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gb :action JumpToLastChange<CR>
 nnoremap gu :action ShowUsages<CR>
+nnoremap <leader>f :action GotoFile<CR>
+nnoremap <leader>/ :action FindInPath<CR>
 
 nnoremap U :action FindUsages<CR>
 nnoremap R :action RenameElement<CR>
