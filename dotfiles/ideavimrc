@@ -44,4 +44,5 @@ nnoremap s :action KJumpAction.Word0<cr>
 nnoremap ,l :action KJumpAction.Line<cr>
 
 set showmode "shows in which mode we are
-set clipboard+=ideaputset clipboard+=ideaput
+"set clipboard+=ideaputset clipboard+=ideaput
+set clipboard+=unnamed
