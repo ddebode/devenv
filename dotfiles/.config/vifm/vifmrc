@@ -29,6 +29,7 @@ set vicmd=vim
 " This probably shouldn't be an option.
 
 set trash
+set trashdir=~/.local/share/Trash/files
 
 " This is how many directories to store in the directory history.
 
