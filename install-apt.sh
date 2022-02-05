@@ -15,8 +15,8 @@ sudo apt install zsh
 sudo apt-get install zsh-antigen
 sudo apt install tmux
 sudo apt install curl
-sudo apt install nodejs
-sudo apt-get install npm --no-install-recommends
+# sudo apt install nodejs  use nvm!
+# sudo apt-get install npm --no-install-recommends
 sudo apt install fd-find
 
 # ZSH_THEME="bira"
