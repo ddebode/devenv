@@ -1,0 +1,30 @@
+{
+    "com.github.episode6.ulauncher-system-management-direct": {
+        "id": "com.github.episode6.ulauncher-system-management-direct",
+        "url": "https://github.com/episode6/ulauncher-system-management-direct",
+        "updated_at": "2020-10-25T15:25:48.674481",
+        "last_commit": "c6c0febff9eae884e4a8bc97d057480436fb5c9b",
+        "last_commit_time": "2020-07-22T18:41:36"
+    },
+    "com.github.isacikgoz.ukill": {
+        "id": "com.github.isacikgoz.ukill",
+        "url": "https://github.com/isacikgoz/ukill",
+        "updated_at": "2020-10-25T22:43:02.450200",
+        "last_commit": "bc50d9f41d46b6813a5aeebddd15734dcdb9d8db",
+        "last_commit_time": "2019-05-28T18:30:00"
+    },
+    "com.github.kuenzelit.ulauncher-firefox-bookmarks": {
+        "id": "com.github.kuenzelit.ulauncher-firefox-bookmarks",
+        "url": "https://github.com/KuenzelIT/ulauncher-firefox-bookmarks",
+        "updated_at": "2020-10-27T20:14:51.000265",
+        "last_commit": "77f1de0adfc2e79ce767f645ae8ad0a0dda2783e",
+        "last_commit_time": "2019-12-07T17:27:46"
+    },
+    "com.github.innercode.ulauncher-openinbrowser": {
+        "id": "com.github.innercode.ulauncher-openinbrowser",
+        "url": "https://github.com/Innercode/ulauncher-openInBrowser",
+        "updated_at": "2021-04-06T12:18:57.523402",
+        "last_commit": "9e828829e2b1fdbbfeb358c0ebc69fd3e7fd9336",
+        "last_commit_time": "2019-09-24T11:43:12"
+    }
+}
