@@ -311,7 +311,7 @@ autocmd VimLeave * call SaveSess()
 " Function to easily move maven depedency version to the property section
 function ReplaceMavenVersion()
    " copy artifactId and put version in register m"
-   exe "norm! yitj\"mcit$\{\}"
+   exe "norm! yitj\"mcit$\{"
    " Paste and type version"
    exe "norm! Pa\.version"
    " Copy property key to k"
@@ -331,8 +331,22 @@ function AddMavenVersion()
    exe "norm! \"kP"
 endfunction
     
-nnoremap <leader>rmv :call ReplaceMavenVersion()<CR>
-nnoremap <leader>amv :call AddMavenVersion()<CR>
+nnoremap <leader>mr :call ReplaceMavenVersion()<CR>
+nnoremap <leader>ma :call AddMavenVersion()<CR>
+
+
+function! VisualSelectJavaMethod()
+    " Move to the beginning of the method
+    " normal! ?
+    " exe "norm! ?\{\<cr>"
+
+    " " Select the method using visual mode
+    normal! V%
+endfunction
+
+" Map a key combination to call the function
+nnoremap <leader>mf :call VisualSelectJavaMethod()<CR>
+
 
 syntax on
 " Enable hl search

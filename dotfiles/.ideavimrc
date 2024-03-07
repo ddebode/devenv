@@ -39,7 +39,10 @@ nnoremap == :action ReformatCode<CR>
 nnoremap cc :action CommentByLineComment<CR>
 nnoremap <C-CR> :action ShowIntentionActions<CR>
 
-" Visual block remap
+" C to change inner word
+nnoremap C ciw
+
+" visual block remap
 nnoremap ,q <c-v>
 " add end of line to % to easily select methods
 noremap % $%
