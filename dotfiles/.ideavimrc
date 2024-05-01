@@ -9,7 +9,7 @@ set NERDTree
 set textobj-indent
 set exchange            " cx to swap regions of text
 set multiple-cursors    " select and then Alt+n (alt+x to skip) Alt+P
-set quickscope
+" set quickscope
 set easymotion
 
 
@@ -29,6 +29,8 @@ nnoremap gs :action GotoSuperMethod<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gb :action JumpToLastChange<CR>
 nnoremap gu :action ShowUsages<CR>
+nnoremap gtt :action GotoTest<CR>
+vnoremap gtt :action GotoTest<CR>
 nnoremap <leader>f :action GotoFile<CR>
 nnoremap <leader>/ :action FindInPath<CR>
 
@@ -39,8 +41,18 @@ nnoremap == :action ReformatCode<CR>
 nnoremap cc :action CommentByLineComment<CR>
 nnoremap <C-CR> :action ShowIntentionActions<CR>
 
+nnoremap ]e :action GotoNextError<CR>
+nnoremap [e :action GotoPreviousError<CR>
+
+nnoremap <Leader>tn :action RunClass<CR> " run current test
+nnoremap <leader>td :action Debug<CR>
+nnoremap <leader>tg :action ActivateCommitToolWindow<CR>
+
 " C to change inner word
 nnoremap C ciw
+
+nnoremap W :action IntroduceVariable<CR>
+vnoremap W :action IntroduceVariable<CR>
 
 " visual block remap
 nnoremap ,q <c-v>
