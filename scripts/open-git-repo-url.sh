@@ -8,4 +8,4 @@ url=$(git config --get remote.origin.url)
 # on macos use open
 [[ "$OSTYPE" == "darwin"* ]] && open $url$1
 # otherwise use xdg-open
-xdg-open $url$1
+/mnt/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe $url$1

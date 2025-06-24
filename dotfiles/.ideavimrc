@@ -51,6 +51,9 @@ nnoremap <leader>tg :action ActivateCommitToolWindow<CR>
 " C to change inner word
 nnoremap C ciw
 
+" copy word
+nnoremap <leader>w yiW
+
 nnoremap W :action IntroduceVariable<CR>
 vnoremap W :action IntroduceVariable<CR>
 
@@ -66,4 +69,7 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " quickscope
 
 set showmode "shows in which mode we are
 "set clipboard+=ideaputset clipboard+=ideaput
-set clipboard+=unnamed
+"set clipboard+=unnamed
+set clipboard=unnamedplus
+
+set clipboard^=ideaput
