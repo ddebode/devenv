@@ -39,6 +39,8 @@ alias d="cd ~/development"
 alias fd=fdfind
 alias fdi="source ~/development/devenv-dennisb/scripts/fd-vi.sh"
 alias fdc="source ~/development/devenv-dennisb/scripts/fd-cd.sh"
+alias gp="git pull"
+alias lg="lazygit"
 alias ls="lsd --blocks  user,group,size,date,name --group-dirs first -la"
 alias mg="~/development/devenv-dennisb/scripts/grep-maven-output.sh"
 alias mvnc="mvn clean install"
@@ -51,7 +53,7 @@ alias reload="exec zsh"
 alias tl="tmux set -Fg 'status-format[1]' '#{status-format[0]}' \; set -g 'status-format[0]' '' \; set -g status 2"
 alias vifm="~/.config/vifm/scripts/vifmrun"
 alias vimr="vi -S ~/.vim/session.vim"
-alias vi="nvim"
+alias vl='NVIM_APPNAME=nvim-lazy nvim'
 alias w="cd ~/development"
 
 
@@ -69,7 +71,8 @@ export PATH=/home/ddebode/.cargo/env:~/.config/vifm/scripts:$PATH
 export SDKMAN_DIR="/home/ddebode/.sdkman"
 [[ -s "/home/ddebode/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ddebode/.sdkman/bin/sdkman-init.sh"
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-eval $(thefuck --alias)
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

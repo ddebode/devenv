@@ -216,10 +216,10 @@ nmap [a :ALEPreviousWrap<CR>
 nmap ]A :ALELast
 nmap [A :ALEFirst
 
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['eslint'],
-\}
+"let g:ale_fixers = {
+"\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+"\   'javascript': ['eslint'],
+"\}
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
