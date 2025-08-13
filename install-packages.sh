@@ -1,9 +1,13 @@
 #!/bin/sh
 
 # apt
+sudo apt install zathura -y
 sudo apt install transmission -y
 sudo apt install rofi -y
+sudo apt install vlc -y
+sudo apt install fd-find -y
 
+brew install zoxide
 brew install fzf
 brew install vifm
 brew install tmux # tmux attach -t base || tmux new -s base
@@ -13,7 +17,6 @@ brew install tldr
 brew install lazygit
 brew install the_silver_searcher
 brew install lsd
-brew install fd
 brew install rm-improved
 brew install ripgrep
 brew install jq
