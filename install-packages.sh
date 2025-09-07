@@ -6,6 +6,7 @@ sudo apt install transmission -y
 sudo apt install rofi -y
 sudo apt install vlc -y
 sudo apt install fd-find -y
+sudo apt install ubuntu-restricted-extras
 
 brew install zoxide
 brew install fzf

@@ -51,7 +51,6 @@ alias ol="firefox http://localhost:8080"
 alias ols="firefox http://localhost:8080/swagger-ui.html"
 alias reload="exec zsh"
 alias tl="tmux set -Fg 'status-format[1]' '#{status-format[0]}' \; set -g 'status-format[0]' '' \; set -g status 2"
-alias vifm="~/.config/vifm/scripts/vifmrun"
 alias vimr="vi -S ~/.vim/session.vim"
 alias vl='NVIM_APPNAME=nvim-lazy nvim'
 alias w="cd ~/development"
@@ -63,7 +62,7 @@ cd() { builtin cd "$@" && lsd --blocks  user,group,size,date,name --group-dirs f
 export BROWSER='/usr/bin/firefox'
 
 # Path
-export PATH=/home/ddebode/.cargo/env:~/.config/vifm/scripts:$PATH
+export PATH=/home/ddebode/.cargo/env:~/.config/vifm/scripts:~/.local/share/bin:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
