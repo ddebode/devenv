@@ -25,13 +25,13 @@ fi
 # Ensure bat is installed or fall back to cat
 if command -v bat &> /dev/null
 then
-    PREVIEW_CMD='batcat --style=numbers --color=always {}'
+    PREVIEW_CMD='batcat --style=numbers --color=always {2}'
 else
     PREVIEW_CMD='cat {}'
 fi
 
 # Run fd with fzf and preview
-selected_file=$(fd "$1" | fzf --preview "$PREVIEW_CMD")
+selected_file=$(fd -i "$1" | awk -F/ '{print $NF "\t" $0}'| fzf --preview "$PREVIEW_CMD" --delimiter '\t' --nth 2 --with-nth 1,2 | awk -F'\t' '{print $2}')
 
 # If a file is selected, open it with vl
 if [ -n "$selected_file" ]; then
@@ -39,4 +39,3 @@ if [ -n "$selected_file" ]; then
 else
     echo "No file selected."
 fi
-
