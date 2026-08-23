@@ -40,6 +40,7 @@ alias fd=fdfind
 alias fdi="source ~/development/devenv-dennisb/scripts/fd-vi.sh"
 alias fdc="source ~/development/devenv-dennisb/scripts/fd-cd.sh"
 alias gp="git pull"
+alias idea="~/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/bin/idea"
 alias lg="lazygit"
 alias ls="lsd --blocks  user,group,size,date,name --group-dirs first -la"
 alias mg="~/development/devenv-dennisb/scripts/grep-maven-output.sh"
