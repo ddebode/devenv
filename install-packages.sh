@@ -25,9 +25,6 @@ brew install bash # some tmux plugins won't work without this
 brew install --cask font-jetbrains-mono-nerd-font
 brew install --cask font-fira-code-nerd-font
 
-# nodejs
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
 #brew install --cask kitty
 
 # neovim
